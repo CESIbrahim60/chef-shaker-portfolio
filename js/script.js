@@ -153,7 +153,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 // Apply to sections
 document.querySelectorAll('.about, .portfolio, .achievements, .education, .contact').forEach(section => {
-    section.style.opacity = '0';
     section.style.transform = 'translateY(30px)';
     section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     revealObserver.observe(section);
